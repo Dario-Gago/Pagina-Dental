@@ -1,1 +1,1 @@
-Quiero hacer una pagina buena para una consulta dental
+Pagina dental
