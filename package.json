@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "lucide-react": "^0.509.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.0"
   },
   "devDependencies": {
     "@types/react": "^19.1.2",
@@ -24,5 +26,4 @@
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"
   }
- 
 }

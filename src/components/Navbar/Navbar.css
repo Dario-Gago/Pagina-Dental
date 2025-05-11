@@ -1,0 +1,27 @@
+.container-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5em;
+}
+.btn-hamb{
+    border: none;
+    background-color: transparent;
+}
+.container-opt{
+    text-align: center;
+}
+.li-opt{
+    display: block;
+}
+.container-opt.oculto {
+  display: none;
+}
+
+.container-opt.visible {
+  display: block;
+}
+
+@media (min-width: 765px) {
+    
+}
