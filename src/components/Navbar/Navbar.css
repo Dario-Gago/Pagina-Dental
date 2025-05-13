@@ -11,9 +11,21 @@
 .container-opt{
     text-align: center;
 }
-.li-opt{
+.uno{
+    background-color: aliceblue;
+
+}
+.li-opt {
     display: block;
 }
+a{
+    color: black;
+    text-decoration: none;
+}
+.active {
+  color: aqua;
+}
+
 .container-opt.oculto {
   display: none;
 }
@@ -21,7 +33,16 @@
 .container-opt.visible {
   display: block;
 }
-
+.dos{
+    display: none;
+}
 @media (min-width: 765px) {
+    .btn-hamb{
+        display: none;
+    }
+    .container-opt{
+        display: flex;
+        gap: 2em;
+    }
     
 }

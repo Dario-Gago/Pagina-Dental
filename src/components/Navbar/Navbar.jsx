@@ -1,18 +1,18 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import { Menu } from 'lucide-react'
-
+import { Link, NavLink } from 'react-router-dom'
 const Navbar = () => {
   const [opciones, setOpciones] = useState([
+    'Inicio',
     'Nosotros',
     'Contacto',
-    'Quienes somos'
+    'Misión'
   ])
   const [mostrarOpciones, setMostrarOpciones] = useState(false)
 
   return (
     <>
-      {/* Hacer que las opciones se muestren cuando la pantalla esta mas grande */}
       <div className='container-nav'>
         <h1>Consulta dental</h1>
         <button
@@ -21,13 +21,17 @@ const Navbar = () => {
         >
           <Menu />
         </button>
-
+        <ul className='container-opt dos'>
+          {opciones.map((opcion, index) => (
+            <li className='li-opt' key={index}><NavLink className={({ isActive }) => isActive ? 'active' : ''} to={opcion === 'Inicio' ? '/' : `/${opcion}`}>{opcion}</NavLink></li>
+          ))}
+        </ul>
       </div>
 
       {/* Aparece o se oculta según el estado */}
-      <ul className={`container-opt ${mostrarOpciones ? 'visible' : 'oculto'}`}>
+      <ul className={`container-opt uno ${mostrarOpciones ? 'visible' : 'oculto'}`}>
         {opciones.map((opcion, index) => (
-          <li className='li-opt' key={index}>{opcion}</li>
+          <li className='li-opt' key={index}><Link to={opcion === 'Inicio' ? '/' : `/${opcion}`}>{opcion}</Link></li>
         ))}
       </ul>
     </>
