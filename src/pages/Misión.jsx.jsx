@@ -1,9 +1,7 @@
-import React from 'react'
-import Navbar from '../components/Navbar/Navbar'
+import Navbar from '../components/layout/Navbar/Navbar'
 const Misión = () => {
   return (
     <>
-      <Navbar />
     </>
   )
 }
