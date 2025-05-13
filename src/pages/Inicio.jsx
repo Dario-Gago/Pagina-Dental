@@ -1,10 +1,9 @@
-import React from 'react'
-import Navbar from '../components/Navbar/Navbar'
+import '../index.css'
+
 const Inicio = () => {
   return (
-    <div>
-      <Navbar />
-
+    <div className='container-inicio'>
+      
     </div>
   )
 }

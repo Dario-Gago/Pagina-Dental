@@ -1,0 +1,8 @@
+.footerCointainer{
+    display: flex;
+    justify-content: center;
+    background-color: red; 
+    padding: 20px;
+    color: white;
+}
+

@@ -3,3 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container-inicio{
+    min-height: 110vh;
+   display: grid;
+   grid-template-rows: auto 1fr auto;
+}
+
