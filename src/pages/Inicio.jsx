@@ -2,9 +2,9 @@ import '../index.css'
 
 const Inicio = () => {
   return (
-    <div className='container-inicio'>
-      
-    </div>
+    <>
+      <h1>Inicio</h1>
+    </>
   )
 }
 
